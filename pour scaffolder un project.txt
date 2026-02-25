@@ -1,0 +1,26 @@
+pour scaffolder un project react-vite : 
+		1) npm create vite@latest "nom du projet " -- --template react-ts
+		2) cd "nom du projet"
+		3) npm install 
+		4) npm run dev
+apres que la creation du dossier  nous faisons le menage:
+ 1) faire un peu le menage en supprimant d'abord le fichier app.css
+ 2) effacer le contenu du fichier de base app.tsx et recommencer avec une nouvelle base 
+
+Apres le menage j'installe axios pour gerer les asynchrones , et react router dom pour gerer la navigation interne 
+ 1) npm i axios 
+ 2) npm i react-router-dom
+ 
+ setup tailwind css
+ 1) sur le site de tailwindcss 
+
+setup shadcn
+en suivant le lien : https://ui.shadcn.com/docs/installation/vite#edit-tsconfigjson-file
+
+ne pas oublier : npm install -D @tailwindcss/vite
+
+pour utiliser le menu et faire le bouton pour les ecrans des mobiles , on a utiliser dropdownmenu de shadcn , par ailleur pour le bouton nous l'avons eu avec lucide react
+
+
+
+

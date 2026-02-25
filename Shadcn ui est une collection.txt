@@ -1,0 +1,5 @@
+Shadcn/ui est une collection de composants React modernes construits avec Tailwind CSS, Radix UI et TypeScript. Elle permet de créer facilement une interface propre, moderne et cohérente sans avoir à tout coder à la main. Les composants sont bien structurés et respectent les bonnes pratiques d’accessibilité et de typage.
+
+La particularité de shadcn/ui est que les composants ne sont pas installés comme une bibliothèque classique. Au lieu de cela, ils sont copiés directement dans ton projet. Cela te donne un contrôle total sur le code : tu peux modifier le style, la logique ou les animations selon tes besoins, sans dépendre d’une version externe.
+
+En résumé, shadcn/ui combine la simplicité de Tailwind, la puissance de React et la flexibilité du code ouvert. C’est un excellent choix si tu veux construire un site ou une application avec un design professionnel et facilement personnalisable.
