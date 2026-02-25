@@ -16,6 +16,9 @@ const Competence = () => {
     { nom: 'CSS3', logo: '/logos/css3.svg' },
     { nom: 'Node.js', logo: '/logos/nodejs.svg' },
     { nom: 'Git', logo: '/logos/git.svg' },
+    { nom: 'Drupal', logo: '/logos/drupal.svg' },
+    {nom : 'Wordpress' ,logo : '/logos/wordpress.svg'}
+
   ]
 
   return (
