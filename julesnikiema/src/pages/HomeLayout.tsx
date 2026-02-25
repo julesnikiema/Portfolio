@@ -6,11 +6,14 @@ import { Outlet } from 'react-router-dom'
 const HomeLayout = () => {
   return (
     <>
+     <div className="min-h-screen flex flex-col">
       <Header />
       <Navbar />
-      <Outlet />
-      <h1>bonjour M. NIKIEMA</h1>
+      <main className="flex-1 pt-20"> {/* Ajout d'un padding-top pour compenser la navbar fixed */}
+        <Outlet />
+      </main>
       <Footer />
+    </div>
 
     </>
   )

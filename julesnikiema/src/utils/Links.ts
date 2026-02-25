@@ -6,8 +6,8 @@ export type Link ={
 
 
 export const links : Link[] = [
-    {ref: "/", label: "home"},
-    {ref: "/Expertise", label:"Expertise"},
-    {ref: "/Realisation", label:"Realisation"},
+    {ref: "/", label: "Accueil"},
+    {ref: "/Competence", label:"Compétence"},
+    {ref: "/Realisation", label:"Réalisation"},
     {ref : "/Contact", label:"Contact"},
 ]

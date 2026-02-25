@@ -2,7 +2,7 @@
 import { createRoot } from 'react-dom/client'
 import './index.css'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
-import { Contact, Expertise, HomeLayout, Landing, Realisation, } from './pages'
+import {  HomeLayout, Home } from './pages'
 
 
 // creons les routes pour la navigation 
@@ -10,10 +10,8 @@ import { Contact, Expertise, HomeLayout, Landing, Realisation, } from './pages'
 const router = createBrowserRouter (
   [{path:"/", element : <HomeLayout/>,
     children:[
-      {index : true , element: < Landing />},
-      {path : "Expertise" , element:< Expertise />},
-      {path : "Realisation" , element:< Realisation/>},
-      {path:"Contact", element : < Contact />},
+      {index : true , element: < Home />}
+      
     ]
    }]
 )
