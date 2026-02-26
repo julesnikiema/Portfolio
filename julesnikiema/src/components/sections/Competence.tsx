@@ -24,12 +24,12 @@ const Competence = () => {
   return (
     <section 
       id='competence' 
-      className='w-full bg-black text-white py-16 md:py-24'
+      className='w-full bg-black text-white py-16 md:py-14'
     >
       {/* Conteneur pour le contenu (centré à 80%) */}
       <div className="align-element">
         {/* Titre */}
-        <h2 className="mars-font text-4xl md:text-5xl font-bold text-center mb-4">
+        <h2 className="mars-font text-4xl md:text-4xl font-bold text-center mb-4">
           Compétences
         </h2>
         

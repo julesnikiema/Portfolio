@@ -41,7 +41,7 @@ const LinksDesktop = () => {
     switch(ref) {
       case '/': return 'accueil'
       case '/Competence': return 'competence' 
-      case '/Realisation': return 'realisations'
+      case '/Realisation': return 'realisation'
       case '/Contact': return 'contact'
       default: return ref.replace('/', '').toLowerCase()
     }
