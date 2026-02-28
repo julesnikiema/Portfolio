@@ -1,4 +1,3 @@
-import React from 'react'
 import socorezImage from "../../assets/images/socorez-site.png";
 import Aneve from "../../assets/images/aneve.jpg"
 import ArtOratoire from "../../assets/images/site_perso.png"

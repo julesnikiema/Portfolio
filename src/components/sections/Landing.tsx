@@ -1,4 +1,3 @@
-import React from 'react'
 import Julesimg from '../../assets/images/informa.jpg'
 
 const Landing = () => {
@@ -29,13 +28,13 @@ const Landing = () => {
         </p>
         <div className='flex flex-wrap md:gap-20 pt-4'>
          <div className="flex flex-wrap gap-4 pt-4">
-  <button className="bg-amber-700 text-primary-foreground px-6 py-3 rounded-lg font-medium hover:bg-primary/90 transition" href="#">
+  {/* <button className="bg-amber-700 text-primary-foreground px-6 py-3 rounded-lg font-medium hover:bg-primary/90 transition" href="#">
     Voir mes réalisations
   </button>
 
   <button className="bg-amber-700 text-primary-foreground px-6 py-3 rounded-lg font-medium hover:bg-primary/90 transition">
     Me contacter
-  </button>
+  </button> */}
 </div>
           
         </div>

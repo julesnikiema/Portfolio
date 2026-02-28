@@ -1,4 +1,3 @@
-import React from 'react'
 
 import { Header,Footer,Navbar } from '@/components'
 import { Outlet } from 'react-router-dom'
