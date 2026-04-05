@@ -12,8 +12,12 @@ const router = createBrowserRouter (
     children:[
       {index : true , element: < Home />}
       
-    ]
-   }]
+    ],
+    
+   }],
+   {
+    basename: import.meta.env.BASE_URL
+  }
 )
 
 createRoot(document.getElementById("root")!).render(<RouterProvider router ={router}/>)
