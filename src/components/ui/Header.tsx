@@ -5,9 +5,9 @@ import AljLogo from "../../assets/images/science-svgrepo-com.svg"
 const Header = () : ReactNode => {
   return (
    <header className="w-full bg-black">
-  <div className="align-element flex flex-col md:flex-row items-center justify-center p-3 gap-4">
+  <div className="align-element flex items-center justify-between py-3">
     <Link to="/">
-      <h1 className="mars-font text-lg pt-2 tracking-[0.1rem] text-white text-center md:text-left">
+      <h1 className="mars-font text-sm sm:text-base md:text-lg tracking-wide text-white">
         Alassane Jules Premier NIKIEMA
       </h1>
     </Link>
@@ -15,7 +15,7 @@ const Header = () : ReactNode => {
       <img
         src={AljLogo}
         alt="logo du site"
-        className="h-12 w-12 object-cover rounded-full"
+       className="h-10 w-10 sm:h-12 sm:w-12 object-contain"
       />
     </Link>
   </div>

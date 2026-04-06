@@ -39,7 +39,8 @@ const LinksMobile = () => {
     e.preventDefault()
     const element = document.getElementById(id)
     if (element) {
-      const yOffset = -80; // Hauteur de la navbar
+      const navbar = document.querySelector("header");
+      const yOffset = navbar ? -navbar.clientHeight : -80;
       const y = element.getBoundingClientRect().top + window.pageYOffset + yOffset
       window.scrollTo({ top: y, behavior: 'smooth' })
     }
@@ -51,7 +52,7 @@ const LinksMobile = () => {
   const getSectionId = (ref: string): string => {
     switch(ref) {
       case '/': return 'accueil'
-      case '/Competence': return 'competence'  // Corrigé: 'competence' sans 's'
+      case '/Competence': return 'competence'  
       case '/Realisation': return 'realisations'
       case '/Contact': return 'contact'
       default: return ref.replace('/', '').toLowerCase()
