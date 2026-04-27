@@ -14,6 +14,7 @@ interface FormErrors {
 }
 
 const Contact = () => {
+  console.log(import.meta.env)
   const [formData, setFormData] = useState<FormData>({
     email: '',
     service: '',
@@ -80,17 +81,18 @@ const Contact = () => {
     setIsSubmitting(true)
 
     emailjs.send(
-      import.meta.env.VITE_EMAILJS_SERVICE_ID,
-      import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
+      "service_a0u4xfq",
+      "template_ht8x0ad",
       {
         email: formData.email,
         service: formData.service,
         description: formData.description,
       },
-      import.meta.env.VITE_EMAILJS_PUBLIC_KEY
+      
+      "TD6IfHSwzVroChiCe"
     )
     .then(() => {
-      alert('Message envoyé avec succès! ✅')
+      alert('Message envoyé avec succès! ')
 
       setFormData({
         email: '',
@@ -125,6 +127,7 @@ const Contact = () => {
             Discutons de votre projet ensemble
           </p>
         </div>
+        
 
         <div className="max-w-2xl mx-auto">
           <form onSubmit={handleSubmit} className="space-y-6">
@@ -154,7 +157,7 @@ const Contact = () => {
                 name="service"
                 value={formData.service}
                 onChange={handleChange}
-                className="w-full px-4 py-3 rounded-lg bg-white/10"
+                className="w-full px-4 py-3 rounded-lg bg-blue/10"
                 disabled={isSubmitting}
               >
                 <option value="">Sélectionnez un service</option>
