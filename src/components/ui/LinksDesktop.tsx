@@ -48,7 +48,7 @@ const LinksDesktop = () => {
   }
 
   return (
-    <div className='mars-font text-lg pt-2 tracking-[0.1rem] hidden text-white w-full lg:flex gap-x-20 justify-center items-center'>
+    <div className=' text-lg pt-2 tracking-[0.1rem] hidden text-white w-full lg:flex gap-x-20 justify-center items-center'>
       {links.map((link) => {
         const { ref, label } = link as Link
         const sectionId = getSectionId(ref)

@@ -15,7 +15,7 @@ const Landing = () => {
 
         <div className='w-full md:w-1/2 space-y-6'>
         <h1 className='text-4xl md:tex-5xl lg:test-6xl font-bold' >
-          <span className='mars-font text-lg pt-2 tracking-[0.1rem] block text-primary' >Alassane Jules Premier NIKIEMA</span>
+          <span className=' text-lg pt-2 tracking-[0.1rem] block text-primary' >Alassane Jules Premier NIKIEMA</span>
           <span className='block text-2xl md:text-3xl text-muted-foreground mt-2' > Développeur et passionné d’art oratoire  </span>
         </h1>
 

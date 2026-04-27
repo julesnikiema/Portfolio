@@ -71,7 +71,7 @@ const Contact = () => {
     }
   }
 
-  // ✅ CORRECTION MAJEURE ICI
+  // 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault()
 
@@ -104,6 +104,8 @@ const Contact = () => {
     .finally(() => {
       setIsSubmitting(false)
     })
+
+    
   }
 
   return (
@@ -196,6 +198,7 @@ const Contact = () => {
           </form>
         </div>
       </div>
+    
     </section>
   )
 }

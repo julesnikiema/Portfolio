@@ -8,6 +8,7 @@ interface Realisation {
   description: string
   image: string
   couleur: string
+  lien:string
 }
 
 const Realisation = () => {
@@ -17,21 +18,24 @@ const Realisation = () => {
       titre: "Socorez Holding",
       description: "Conception et développement du site web institutionnel de Socorez Holding, incluant la définition de l’architecture de l’information, le design UX/UI et l’implémentation technique d’une solution performante, responsive et alignée avec l’identité de marque de l’entreprise. ",
       image: socorezImage ,
-      couleur: "bg-amber-800" // Premier projet mis en évidence
+      couleur: "bg-amber-800",// Premier projet mis en évidence
+      lien: "https://www.socorezholding.com/"
     },
     {
       id: 2,
       titre: "ANEVE (Site web développé sous Drupal-Projet collaboratif)",
       description: "Participation au développement d’un site web sous Drupal au sein d’une équipe projet. Contribution active à la phase de réalisation technique et d’intégration. À l’issue du projet, animation de sessions de formation destinées aux clients, portant sur l’administration, la gestion de contenu et la prise en main complète de la plateforme.",
       image:Aneve,
-      couleur: "bg-amber-800"
+      couleur: "bg-amber-800",
+      lien: "https://aneve.bf/"
     },
     {
       id: 3,
       titre: "Site personnel – Art oratoire",
       description: "Conception et développement d’un site web personnel dédié à la présentation de mes activités en art oratoire. La plateforme met en valeur mes interventions, prestations et contenus, avec une attention particulière portée à l’expérience utilisateur, à la clarté du message et à l’identité visuelle.",
       image: ArtOratoire,
-      couleur: "bg-amber-800"
+      couleur: "bg-amber-800",
+      lien : "https://sites.google.com/view/ajulesnikiema/quis-suis-je"
     },
   ]
 
@@ -43,7 +47,7 @@ const Realisation = () => {
       <div className="align-element">
         {/* En-tête de section */}
         <div className="text-center mb-12">
-          <h2 className="text-4xl md:text-4xl font-bold mb-4  mars-font">
+          <h2 className="text-4xl md:text-4xl font-bold mb-4 ">
             Réalisations
           </h2>
           <div className="w-24 h-1 bg-primary mx-auto"></div>
@@ -62,10 +66,21 @@ const Realisation = () => {
               `}
             >
               {/* Zone image */}
-              <div className="relative h-48 bg-/20 flex items-center justify-center">
-              <img   className="w-full h-full object-cover" src={realisation.image} alt="" />
-              </div>
 
+            <div className="relative h-48 bg-/20 flex items-center justify-center">
+              <a 
+                href={realisation.lien} 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="w-full h-full block"
+              >
+                <img
+                  className="w-full h-full object-cover"
+                  src={realisation.image}
+                  alt=""
+                />
+              </a>
+            </div>
               {/* Contenu texte */}
               <div className="p-4">
                 <h3 className="text-xl font-semibold mb-2">

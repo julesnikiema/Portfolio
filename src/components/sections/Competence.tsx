@@ -5,7 +5,7 @@
  * Affiche les logos des langages de programmation et un micro pour l'art oratoire
  */
 const Competence = () => {
-  // Tu peux remplacer ces chemins par tes vraies images
+  // les logos des technologies
   const technologies = [
     { nom: 'React', logo: '/logos/react.svg' },
     { nom: 'JavaScript', logo: '/logos/javascript.svg' },
@@ -28,7 +28,7 @@ const Competence = () => {
       {/* Conteneur pour le contenu (centré à 80%) */}
       <div className="align-element">
         {/* Titre */}
-        <h2 className="mars-font text-4xl md:text-4xl font-bold text-center mb-4">
+        <h2 className=" text-4xl md:text-4xl font-bold text-center mb-4">
           Compétences
         </h2>
         
@@ -61,7 +61,7 @@ const Competence = () => {
 
         {/* Section Art Oratoire avec micro */}
         <div className="border-t border-white/20 pt-12">
-          <h3 className=" mars-font text-2xl md:text-3xl font-semibold text-center mb-8">
+          <h3 className="  text-2xl md:text-3xl font-semibold text-center mb-8">
             Art Oratoire
           </h3>
           
@@ -89,9 +89,11 @@ const Competence = () => {
             {/* Texte descriptif */}
             <div className="max-w-2xl text-center md:text-left">
               <p className="text-lg text-gray-300 leading-relaxed">
-                Passionné par l'art oratoire, je maîtrise l'art de la communication 
-                et de la présentation. Capacité à expliquer des concepts techniques 
-                complexes de manière claire et engageante.
+                Formateur en Art Oratoire & Maitre de cérémonie , j’ai coaché +125 personnes en 2025.  
+                J’accompagne cadres, entrepreneurs, leaders associatifs et étudiants ambitieux à structurer leur discours et maîtriser leur présence en situation à fort enjeu.
+                <br/> J’interviens comme maître de cérémonie pour des conférences, cérémonies institutionnelles, 
+                dîners de gala et mariages élégants, en assurant une animation fluide, une gestion rigoureuse du programme
+                 et une présence scénique professionnelle.
               </p>
               
               {/* Badges/Puces (optionnel) */}
